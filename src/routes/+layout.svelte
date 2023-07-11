@@ -4,7 +4,7 @@
 	import tmdblogo from '$lib/images/tmdblogo.svg';
 </script>
 
-<nav>
+<nav class="column">
 	<a href="/"><img alt="SvelteFlix" src={logo} /></a>
 
 	<div class="links">

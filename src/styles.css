@@ -23,3 +23,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.column {
+    width: var(--column);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--side)
+}
