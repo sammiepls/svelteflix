@@ -2,6 +2,7 @@
 	import '../styles.css';
 	import logo from '$lib/images/logo.svg';
 	import tmdblogo from '$lib/images/tmdblogo.svg';
+	import { page } from '$app/stores';
 </script>
 
 <nav class="column">
@@ -14,7 +15,7 @@
 	</div>
 </nav>
 
-<main>
+<main class:infinite={$page.data.infinite}>
 	<slot />
 </main>
 
@@ -41,6 +42,12 @@
 	.links {
 		display: flex;
 		gap: 1rem;
+	}
+
+	main.infinite {
+		height: 0;
+		flex: 1;
+		overflow: hidden;
 	}
 
 	a {

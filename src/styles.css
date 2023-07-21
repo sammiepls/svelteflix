@@ -22,10 +22,12 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    margin: 0;
 }
 
 .column {
-    width: var(--column);
+    max-width: var(--column);
     margin-left: auto;
     margin-right: auto;
     padding: 0 var(--side)
