@@ -12,11 +12,8 @@ export async function get(
 	const url = `${base}/${endpoint}?${q}`;
 
 	if (cache.has(url)) {
-		console.log('cache HIT', url);
 		return cache.get(url);
 	}
-
-	console.log('cache MISS', url);
 
 	const response = await fetch(url);
 	const data = await response.json();
